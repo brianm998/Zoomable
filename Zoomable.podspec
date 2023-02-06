@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
 
   s.author       = { "" => "" }
-  s.platforms    = { :osx =>  "10.13" }
+  s.platforms    = { :osx =>  "10.15" }
 
   s.dependency 'SDWebImage'
   s.dependency 'SDWebImageSwiftUI'
