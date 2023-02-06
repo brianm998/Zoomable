@@ -61,7 +61,7 @@ public struct ZoomableImageView<Content>: View where Content: View {
     
     public var body: some View {
         GeometryReader { proxy in
-            ZoomableView(size: imageSize, min: self.min, max: self.max, showsIndicators: self.showsIndicators, scale: self.scale) {
+            ZoomableView(size: imageSize, min: self.min, max: self.max, showsIndicators: self.showsIndicators, scale: self.$scale) {
                 WebImage(url: url)
                     .resizable()
                     .onSuccess(perform: { image, _, _ in
